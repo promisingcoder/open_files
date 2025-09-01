@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
         <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
           <SearchIcon sx={{ mr: 2 }} />
           <Typography variant="h6" component="div" sx={{ fontWeight: 700 }}>
-            Searxng File Scraper
+            open_files
           </Typography>
         </Box>
 

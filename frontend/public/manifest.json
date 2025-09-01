@@ -1,6 +1,6 @@
 {
-  "short_name": "Searxng Scraper",
-  "name": "Searxng File Scraper",
+  "short_name": "open_files",
+  "name": "open_files",
   "description": "Search and discover open files across multiple Searxng instances",
   "icons": [
     {

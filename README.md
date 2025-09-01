@@ -1,4 +1,4 @@
-# Searxng File Scraper
+# open_files
 
 A comprehensive web scraping system that searches for open files (Google Docs, Google Drive, PDFs, etc.) across multiple Searxng instances and provides a modern web interface for managing searches and viewing results.
 

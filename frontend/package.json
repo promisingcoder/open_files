@@ -1,7 +1,7 @@
 {
-  "name": "searxng-scraper-frontend",
+  "name": "open_files-frontend",
   "version": "1.0.0",
-  "description": "React frontend for Searxng file scraper system",
+  "description": "React frontend for open_files system",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
