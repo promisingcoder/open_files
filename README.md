@@ -36,6 +36,7 @@ A tool that searches for **open files** (Google Docs, Google Drive, PDFs, etc.) 
 ---
 
 ## ⚡ Quick Setup
+#### quick note : run the 20240101000001_initial_schema.sql file in supabase's sql editor before anything to initialize the db
 
 ### 1. Clone the Project
 
