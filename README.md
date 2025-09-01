@@ -1,5 +1,19 @@
 # open_files
 
+<img width="1918" height="876" alt="image" src="https://github.com/user-attachments/assets/92e00571-5493-4295-9f0d-9d7e37a04ec2" />
+
+
+<img width="1918" height="872" alt="image" src="https://github.com/user-attachments/assets/9932b4f6-ce05-42f9-bbd4-d0756ca65171" />
+
+<img width="1917" height="872" alt="image" src="https://github.com/user-attachments/assets/fa8272cd-ecdb-4f47-82bb-777a4473bf37" />
+
+<img width="1918" height="797" alt="image" src="https://github.com/user-attachments/assets/6210db85-ac0c-4b1e-b3c0-f666ee41cc6b" />
+
+<img width="1917" height="792" alt="image" src="https://github.com/user-attachments/assets/79e6f202-bdc0-4bbb-89da-ce45893ea47d" />
+
+
+
+
 A comprehensive web scraping system that searches for open files (Google Docs, Google Drive, PDFs, etc.) across multiple Searxng instances and provides a modern web interface for managing searches and viewing results.
 
 ## 🚀 Features
