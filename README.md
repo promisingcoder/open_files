@@ -87,7 +87,7 @@ cp .env.example .env
 
 1. Create a new Supabase project
 2. Copy the project URL and anon key and your_service_role_key to your `.env` file
-3. Run the migration in supabase sql editor:
+3. Run the migration in supabase sql editor
 
 
 
