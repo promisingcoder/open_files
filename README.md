@@ -86,26 +86,10 @@ cp .env.example .env
 #### Option A: Using Supabase (Recommended)
 
 1. Create a new Supabase project
-2. Copy the project URL and anon key to your `.env` file
-3. Run the migration:
+2. Copy the project URL and anon key and your_service_role_key to your `.env` file
+3. Run the migration in supabase sql editor:
 
-```bash
-# Initialize Supabase (if not already done)
-supabase init
 
-# Apply migrations
-supabase db push
-```
-
-#### Option B: Local PostgreSQL
-
-1. Install PostgreSQL and PGronga extension
-2. Create a database
-3. Run the migration script:
-
-```bash
-psql -d your_database -f supabase/migrations/20240101000001_initial_schema.sql
-```
 
 ### 4. Frontend Setup
 
