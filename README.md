@@ -50,7 +50,7 @@ A comprehensive web scraping system that searches for open files (Google Docs, G
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/promisingcoder/open_files.git
 cd searxng-file-scraper
 ```
 
