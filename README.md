@@ -1,5 +1,3 @@
-# open_files
-
 <img width="1918" height="876" alt="image" src="https://github.com/user-attachments/assets/92e00571-5493-4295-9f0d-9d7e37a04ec2" />
 
 
@@ -11,61 +9,40 @@
 
 <img width="1917" height="792" alt="image" src="https://github.com/user-attachments/assets/79e6f202-bdc0-4bbb-89da-ce45893ea47d" />
 
+# Open Files
 
+A web scraping tool that searches for open files (Google Docs, Google Drive, PDFs, etc.) across multiple Searxng instances with a web interface for viewing results.
 
+## Features
 
-A comprehensive web scraping system that searches for open files (Google Docs, Google Drive, PDFs, etc.) across multiple Searxng instances and provides a modern web interface for managing searches and viewing results.
+- Search multiple Searxng instances at once
+- Detect and filter different file types (PDF, DOC, Google Docs, etc.)
+- Web interface for managing searches and results
+- Database storage with PostgreSQL
+- Basic analytics and statistics
+- REST API for programmatic access
 
-## 🚀 Features
+## Architecture
 
-- **Multi-Instance Search**: Query multiple Searxng instances simultaneously
-- **File Type Detection**: Automatically identifies and categorizes different file types with case-insensitive filtering
-- **Google Services Integration**: Special detection for Google Docs and Google Drive files
-- **Advanced Filtering**: Filter results by file type, domain, date range, and more
-- **Full-Text Search**: Powered by PostgreSQL's PGronga extension
-- **Real-Time Statistics**: Analytics dashboard with charts and insights
-- **RESTful API**: Complete API for programmatic access
-- **Modern UI**: React-based frontend with Material-UI components and auto-dismissing notifications
-- **Database Storage**: Persistent storage with Supabase/PostgreSQL
-- **Configurable**: Manage Searxng instances and search parameters
-- **Enhanced UX**: Improved notification system with automatic fade-away and better user feedback
+- **Frontend**: React web interface
+- **Backend**: FastAPI server with scraping logic
+- **Database**: PostgreSQL/Supabase for data storage
+- **Search**: Multiple Searxng instances
 
-## 🏗️ Architecture
-
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   React Frontend │    │  FastAPI Backend │    │ Supabase/PostgreSQL │
-│                 │◄──►│                 │◄──►│                 │
-│ - Search UI     │    │ - API Endpoints │    │ - Data Storage  │
-│ - Results View  │    │ - Scraper Logic │    │ - Full-text Search │
-│ - Statistics    │    │ - Background Tasks │  │ - Analytics     │
-│ - Instance Mgmt │    │ - Rate Limiting │    │ - Migrations    │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                                │
-                                ▼
-                       ┌─────────────────┐
-                       │ Searxng Instances │
-                       │                 │
-                       │ - Instance 1    │
-                       │ - Instance 2    │
-                       │ - Instance N    │
-                       └─────────────────┘
-```
-
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.8+
 - Node.js 16+
 - Supabase account (or PostgreSQL with PGronga extension)
 - Git
 
-## 🛠️ Installation
+## Installation
 
 ### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/promisingcoder/open_files.git
-cd searxng-file-scraper
+cd open_files
 ```
 
 ### 2. Backend Setup
@@ -83,12 +60,11 @@ cp .env.example .env
 
 ### 3. Database Setup
 
-#### Option A: Using Supabase (Recommended)
+#### Option A: Using Supabase 
 
 1. Create a new Supabase project
-2. Copy the project URL and anon key and your_service_role_key to your `.env` file
-3. Run the migration in supabase sql editor
-
+2. Copy the project URL and keys to your `.env` file
+3. Run the migration in sql editor 
 
 
 ### 4. Frontend Setup
@@ -101,7 +77,7 @@ npm install
 echo "REACT_APP_API_URL=http://localhost:8000" > .env
 ```
 
-## 🚀 Running the Application
+## Running the Application
 
 ### Development Mode
 
@@ -124,7 +100,7 @@ npm start
    - Backend API: http://localhost:8000
    - API Documentation: http://localhost:8000/docs
 
-### Production Mode
+### Building for Testing
 
 1. **Build the Frontend**:
 ```bash
@@ -137,7 +113,7 @@ npm run build
 python main.py api --host 0.0.0.0 --port 8000
 ```
 
-## 📖 Usage
+## Usage
 
 ### Command Line Interface
 
@@ -189,7 +165,7 @@ response = requests.get('http://localhost:8000/api/results', params={
 })
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -212,7 +188,7 @@ Add Searxng instances through:
 - CLI: `python main.py add-instance`
 - Direct database insertion
 
-## 📊 Database Schema
+## Database Schema
 
 ### Tables
 
@@ -228,7 +204,7 @@ Add Searxng instances through:
 - Row Level Security (RLS)
 - Optimized indexes
 
-## 🔍 Search Features
+## Search Features
 
 ### Supported File Types
 
@@ -255,7 +231,7 @@ Add Searxng instances through:
 - **Google Docs/Drive Filtering**: Specifically filter for Google Workspace documents
 - **Full-Text Content Search**: Search within document content using PostgreSQL's advanced search capabilities
 
-## 📈 Analytics
+## Analytics
 
 The system provides comprehensive analytics:
 
@@ -266,7 +242,7 @@ The system provides comprehensive analytics:
 - Success rates
 - Response times
 
-## 🛡️ Security
+## Security
 
 - Environment-based configuration
 - Rate limiting
@@ -275,41 +251,19 @@ The system provides comprehensive analytics:
 - CORS configuration
 - Row Level Security (RLS)
 
-## 🧪 Testing
 
-```bash
-# Run backend tests
-pytest
 
-# Run frontend tests
-cd frontend
-npm test
+## Development Notes
 
-# Test database connection
-python main.py test-db
+**This is a development project and not ready for production use.**
 
-# Test Searxng instances
-python main.py test-instances
-```
-
-## 🚀 Deployment
-
-### Docker (Recommended)
-
-```bash
-# Build and run with Docker Compose
-docker-compose up -d
-```
-
-### Manual Deployment
-
-1. Set up a production database
+For local development:
+1. Set up a development database
 2. Configure environment variables
 3. Build the frontend
-4. Deploy with a reverse proxy (nginx)
-5. Set up process management (systemd, PM2)
+4. Run locally for testing
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -317,11 +271,11 @@ docker-compose up -d
 4. Add tests
 5. Submit a pull request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🆘 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -355,20 +309,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
    - Persistent notifications with actions require user interaction
    - Check browser console for any JavaScript errors
 
-### Logs
 
-```bash
-# View application logs
-tail -f logs/app.log
 
-# View API logs
-tail -f logs/api.log
-
-# View scraper logs
-tail -f logs/scraper.log
-```
-
-## 📞 Support
+## Support
 
 For support and questions:
 
@@ -376,7 +319,7 @@ For support and questions:
 - Check the documentation
 - Review existing issues
 
-## 🔄 Updates
+## Updates
 
 ### Recent Updates (v2.1.0)
 
