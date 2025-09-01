@@ -1,0 +1,112 @@
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+PIPFILE.lock
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# React build
+frontend/build/
+frontend/dist/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+*.tmp
+*.temp
+
+# Test files
+*.test
+*.spec
+coverage/
+.nyc_output/
+
+# Personal notes and sensitive data
+notes.txt
+secrets.txt
+config.local.*
+
+# Keep migrations (database setup)
+!supabase/migrations/
+!**/migrations/*.sql
+
+# Supabase config (contains sensitive settings)
+supabase/config.toml
+
+# Keep example files
+!.env.example
+
+# Ignore specific output files
+curl_request_*.txt
+errors.txt
+inetol_response.html
+example_html_of_result.txt
+code_to_searxng_instances.txt
+
+# Ignore temporary and output txt files
+*_response*.txt
+*_request*.txt
+*_output*.txt
+*_result*.txt
+temp_*.txt
+output_*.txt
