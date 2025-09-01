@@ -100,7 +100,6 @@ npm start
    - Backend API: http://localhost:8000
    - API Documentation: http://localhost:8000/docs
 
-### Building for Testing
 
 1. **Build the Frontend**:
 ```bash
@@ -113,29 +112,6 @@ npm run build
 python main.py api --host 0.0.0.0 --port 8000
 ```
 
-## Usage
-
-### Command Line Interface
-
-```bash
-# List available commands
-python main.py --help
-
-# Add a Searxng instance
-python main.py add-instance "My Instance" "https://searx.example.com"
-
-# List instances
-python main.py list-instances
-
-# Run a search
-python main.py search "filetype:pdf site:edu" --max-pages 3
-
-# Show statistics
-python main.py stats
-
-# Clean up old results
-python main.py cleanup --days 30
-```
 
 ### Web Interface
 
