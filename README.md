@@ -54,7 +54,7 @@ cp .env.example .env
 
 ### 3. Database
 
-* **Option A: Supabase** → create a project,run the migrations file in the migrations directory, copy URL & keys to `.env`
+* ** Supabase** → create a project,run the migrations file in the migrations directory, copy URL & keys to `.env`
 
 
 ### 4. Frontend Setup
